@@ -109,7 +109,7 @@ resource "aws_route_table_association" "dpp-rta-public-subnet-02" {
   subnet_id      = aws_subnet.dpp-public-subnet-02.id
   route_table_id = aws_route_table.dpp-public-rt.id
 }
-// These are terraform modules importing from one step back from present folder sg_eks and eks modules
+// These are terraform modules importing from one step back from present folder sg_eks and eks modules.
 // Attaching these sgs and eks to current VPC.
 module "sgs" {
     source = "../sg_eks"
